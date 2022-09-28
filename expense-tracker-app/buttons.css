@@ -1,0 +1,82 @@
+.small-button1{
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border: 1px solid red;
+  padding: 7.5px 6.5px 7.5px 6.5px;
+}
+
+.small-button2{
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(4, 185, 4);
+  padding: 7.5px 6.5px 7.5px 6.5px;
+}
+
+/* code to make the up-down arrow disappear from the amount input box*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.add-expense-container{
+  text-align: center;
+}
+
+.add-expense-button{
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: rgb(4, 185, 4);
+  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.15s;
+}
+
+.add-expense-button:hover{
+  background-color: rgb(27, 128, 27);
+  }
+
+.add-expense-button:active{
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.234);
+}
+
+
+.expense-button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid lightgrey;
+  width: 100px;
+  height: 40px;
+}
+
+.expense-button{
+  cursor: pointer;
+  border: none;
+  border-radius: 60px;
+  width: 25px;
+  height: 25px;
+
+  color:white;
+  background-color: red;
+  border: 1px solid white;
+
+  transition: all 0.15s;
+}
+
+.expense-button:hover{
+  color:red;
+  background-color: white;
+  border: 1px dashed red;
+}
+
+.expense-button:active{
+  color: white;
+  background-color: red;
+  border: 1px solid white;
+}
