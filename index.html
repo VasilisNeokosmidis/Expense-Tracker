@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="statistics.css">
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+<div class="the-largest-container">
+<div id="webTitleContainer">
+  <div id="webTitle">
+    Expense Tracker
+  </div>
+</div>
+
+<div id="addNewItemContainer">
+  <div id="addNewItem">
+    Add A New Item:
+  </div>
+</div>
+
+
+<div class="info-container">
+
+  <div class="name-container">
+    
+    <div class="input-title">
+      Name:
+    </div>
+
+    <div class="input-box-container">
+      <input type="text" class="input-box" id="nameBox"  placeholder="Where was the expense made?">
+    </div>
+  </div>
+
+  <div class="date-amount-container">
+    <div class="date-container">
+
+      <div class="input-title">
+        Date:
+      </div>
+  
+      <div class="input-box-container">
+        <input type="datetime-local" id="dateBox" class="input-box">
+      </div>
+
+    </div>
+
+    <div class="amount-symbol-container">
+
+  <input type="text" list="symbolList" id="symbols">
+ 
+  <datalist id="symbolList">
+    <option value="&#36"></option>
+    <option value="&#8364"></option>
+    <option value="&#163"></option>
+    <option value="&#165"></option>
+    <option value="&#8377"></option> 
+  </datalist>
+
+    </div>
+
+    <div class="amount-container">
+
+      <div class="input-title">
+        Amount:
+      </div>
+      
+    <div class="input-box-container">
+      <div>
+        <button class="small-button1" onclick="increment(-10)">-10</button>    
+      </div>
+      <div>
+        <button class="small-button1" onclick="increment(-20)">-20</button>    
+      </div>
+      <div>
+        <button class="small-button1" onclick="increment(-50)">-50</button>    
+      </div>
+      <div>
+        <button class="small-button1" onclick="increment(-100)">-100</button>    
+      </div>
+        <input type="text" class="input-box" id="amountBox" placeholder="Enter the amount">
+        <div>
+          <button class="small-button2" onclick="increment(10)">+10</button>    
+        </div>
+        <div>
+          <button class="small-button2" onclick="increment(20)">+20</button>    
+        </div>
+        <div>
+          <button class="small-button2" onclick="increment(50)">+50</button>    
+        </div>
+        <div>
+          <button class="small-button2" onclick="increment(100)">+100</button>    
+        </div>
+    </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="add-expense-container">
+<button class="add-expense-button" onclick="addExpenseButton()">Add Expense</button>
+</div>
+
+<div class="expense-table">
+
+  <div class="list-title-container">
+    <div class="list-title">
+      Place
+    </div>
+    <div class="list-title">
+      Date
+    </div>
+    <div class="list-title">
+      Amount
+    </div>
+    <div class="button-title">
+      Delete
+    </div>
+  </div>
+  
+  <div id="expense-list">
+    <div class="no-expenses">
+      No expenses added yet!            
+      </div>
+  </div>
+</div>
+
+<div class="statistics">
+
+  <div class="statistics-title">
+    See Statistics
+  </div>
+
+  <div id="totalExpenses">
+
+    <div class="stat-header">
+      Total Expenses
+    </div>
+
+    <div id="stat-totalAmount-table">
+      <div class="no-expenses">
+        Please enter an expense!            
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="totalExpensesByPlace">
+    
+    <div class="stat-header">
+      Total Expenses By Place
+    </div>
+
+    <div class="stat-subheader">
+
+      <div class="stat-subsubheader">
+        Place
+      </div>
+
+      <div class="stat-subsubheader">
+        Amount
+      </div>
+
+    </div>
+
+    <div id="stat-place-table">
+    
+      <div class="no-expenses">
+        Please enter an expense!            
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div id="totalExpensesByAmount">
+    
+    <div class="stat-header">
+      Total Expenses By Amount
+    </div>
+
+    <div class="stat-subheader">
+
+      <div class="stat-subsubheader">
+        Place
+      </div>
+
+      <div class="stat-subsubheader">
+        Amount
+      </div>
+
+    </div>
+
+    <div id="stat-amount-table">
+    
+      <div class="no-expenses">
+        Please enter an expense!            
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+</div>
+
+</body>
+</html>
+
